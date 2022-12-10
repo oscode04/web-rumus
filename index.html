@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malas Ngitung</title>
+    <link
+      rel="stylesheet"
+      href="bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="bootstrap/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="web-tittle">
+      <h1>Malas Ngitung</h1>
+    </div>
+
+    <!-- search bar -->
+    <div class="search-box d-flex align-items-center">
+      <div class="search-icon">
+        <i class="bi-search"></i>
+      </div>
+      <div class="search-input">
+        <input type="search" class="form-control" placeholder="Cari Rumus" />
+      </div>
+    </div>
+    <!-- end search bar -->
+
+    <!-- Category -->
+    <div class="container">
+      <div class="category d-none d-sm-block">
+        <p>Kategori</p>
+      </div>
+
+      <div class="category-menu d-flex justify-content-center">
+        <nav class="navbar navbar-expand-lg nav-menu">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >All</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Bangun Datar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Konversi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Bangun Ruang</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- End Category -->
+
+    <!-- content -->
+    <section class="row-one">
+      <div class="container-fluid content">
+        <div class="row first-row">
+          <div class="col-lg-3 col-6">
+            <a href="./pages/phytagoras.html">
+              <div
+                data-tilt
+                class="formula-box d-flex flex-column align-items-center"
+              >
+                <img
+                  src="aset/konten/pytagoras.svg"
+                  alt=""
+                  class="formula-icon"
+                />
+                <p class="formula-name">Rumus Phytagoras</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-6">
+            <a href="#">
+              <div
+                data-tilt
+                class="formula-box d-flex flex-column align-items-center"
+              >
+                <img src="aset/konten/kubus.png" alt="" class="formula-icon" />
+                <p class="formula-name">Rumus Kubus</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-6">
+            <a href="#">
+              <div
+                data-tilt
+                class="formula-box d-flex flex-column align-items-center"
+              >
+                <img src="aset/konten/suhu.png" alt="" class="formula-icon" />
+                <p class="formula-name">Konversi Suhu</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-6">
+            <a href="#">
+              <div
+                data-tilt
+                class="formula-box d-flex flex-column align-items-center"
+              >
+                <img
+                  src="aset/konten/persegi.png"
+                  alt=""
+                  class="formula-icon"
+                />
+                <p class="formula-name">Rumus Persegi</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid content">
+        <div class="row first-row">
+          <div class="col-lg-3 col-6">
+            <a href="#">
+              <div
+                data-tilt
+                class="formula-box d-flex flex-column align-items-center"
+              >
+                <img src="aset/konten/segita.png" alt="" class="formula-icon" />
+                <p class="formula-name">Rumus Segitiga Sama Kaki</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-6">
+            <a href="#">
+              <div
+                data-tilt
+                class="formula-box d-flex flex-column align-items-center"
+              >
+                <img
+                  src="aset/konten/segitiga-siku.png"
+                  alt=""
+                  class="formula-icon"
+                />
+                <p class="formula-name">Rumus Segitiga Siku-Siku</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-6">
+            <a href="#">
+              <div
+                data-tilt
+                class="formula-box d-flex flex-column align-items-center"
+              >
+                <img
+                  src="aset/konten/lingkaran.png"
+                  alt=""
+                  class="formula-icon"
+                />
+                <p class="formula-name">Rumus Lingkaran</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-6">
+            <a href="#">
+              <div
+                data-tilt
+                class="formula-box d-flex flex-column align-items-center"
+              >
+                <img
+                  src="aset/konten/mata-uang.png"
+                  alt=""
+                  class="formula-icon"
+                />
+                <p class="formula-name">Konversi Mata Uang</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end content -->
+    <div></div>
+
+    <!-- script -->
+
+    <!-- bootstrap -->
+    <script src="bootstrap/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- tilt js -->
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+
+    <!-- particle js -->
+    <script src="js/Particle-js/particles.js"></script>
+    <script src="js/Particle-js/app.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

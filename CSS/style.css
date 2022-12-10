@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:wght@400;500;600&display=swap");
+
+body {
+  background-color: #181a28;
+}
+
+.web-tittle {
+  color: #fff;
+  font-family: "Nerko One", cursive;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* search bar style */
+.search-box {
+  margin: auto;
+  /* min-width: 200px; */
+  max-width: 650px;
+  max-height: 45px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  margin-top: 28px;
+}
+
+.search-icon {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  margin-left: 13px;
+}
+
+.search-input {
+  max-width: 100%;
+}
+
+.search-input input,
+.search-input input:focus {
+  border-radius: 50px;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #fff;
+}
+
+.search-input input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.search-input input::-webkit-search-cancel-button {
+  appearance: none;
+}
+/* end search bar style */
+
+/* category */
+.category {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 24;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.category-menu a {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400 !important;
+}
+
+.category-menu .nav-link.active {
+  color: #fff;
+  font-weight: 500;
+}
+
+.active::after {
+  content: "";
+  display: block;
+  min-width: 30px;
+  max-width: 50px;
+  border-bottom: 2px solid #fff;
+  margin: auto;
+}
+
+.nav-link:hover {
+  color: #f7f7ff !important;
+}
+
+.nav-link:hover::after {
+  content: "";
+  display: block;
+  min-width: 30px;
+  max-width: 70px;
+  border-bottom: 2px solid #fff;
+  margin: auto;
+}
+
+.nav-menu {
+  padding: 0;
+  margin: 0;
+  margin-top: -14px;
+}
+/* end category */
+
+/* content */
+.formula-box {
+  max-width: 255px;
+  max-height: 255px;
+  background: linear-gradient(
+    138.53deg,
+    rgba(238, 238, 238, 0.6) 4.09%,
+    rgba(238, 238, 238, 0.3) 95.12%
+  );
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.formula-icon {
+  max-width: 130px;
+  max-height: 130px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  transform: translateZ(20px);
+}
+/* margin left for mobile*/
+
+.formula-name {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.content {
+  width: 95%;
+}
+
+.first-row {
+  margin-top: 30px;
+}
+
+.row-one {
+  /* overflow: hidden; */
+  /* margin-left: 20px; */
+}
+/* end content */
+
+/* particle js */
+#particles-js {
+  z-index: -2;
+  position: absolute;
+  width: 100%;
+  height: 150%;
+}
+
+/* custom scroll bar */
+/* width */
+::-webkit-scrollbar {
+  max-width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(236, 236, 236, 0.5);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+}
