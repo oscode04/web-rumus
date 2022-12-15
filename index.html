@@ -28,7 +28,13 @@
           <i class="bi-search"></i>
         </div>
         <div class="search-input">
-          <input type="search" class="form-control" placeholder="Cari Rumus" />
+          <input
+            onkeyup="searchFormula()"
+            id="searchFormula"
+            type="search"
+            class="form-control"
+            placeholder="Cari Rumus"
+          />
         </div>
       </div>
     </div>
@@ -135,7 +141,7 @@
       <div class="container-fluid content">
         <div class="row first-row">
           <div class="col-lg-3 col-6">
-            <a href="./pages/phytagoras.html">
+            <a id="phytagoras" href="./pages/phytagoras.html">
               <div
                 data-tilt
                 class="formula-box d-flex flex-column align-items-center"
@@ -151,7 +157,7 @@
             </a>
           </div>
           <div class="col-lg-3 col-6">
-            <a href="#">
+            <a id="kubus" href="#">
               <div
                 data-tilt
                 class="formula-box d-flex flex-column align-items-center"
@@ -173,7 +179,7 @@
             </a>
           </div>
           <div class="col-lg-3 col-6">
-            <a href="#">
+            <a href="pages/persegipanjang.html">
               <div
                 data-tilt
                 class="formula-box d-flex flex-column align-items-center"
