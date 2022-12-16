@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rumus Persegi</title>
+    <title>Rumus Segitiga Sama Kaki</title>
     <link
       rel="stylesheet"
       href="../bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -15,40 +15,45 @@
     />
     <link
       rel="stylesheet"
-      href="../css/css-pages/style-persegi.css
-    "
+      href="../css/css-pages/stye-segitiga-sama-kaki.css"
     />
   </head>
   <body>
     <div class="container web-tittle">
-      <h1>Rumus Persegi</h1>
+      <h1>Rumus Segitiga Sama Kaki</h1>
     </div>
 
     <!-- content -->
     <div class="icon">
       <div class="formula-box d-flex flex-column align-items-center">
-        <img src="../aset/konten/persegi.png" alt="" class="formula-icon" />
+        <img src="../aset/konten/segita.png" alt="" class="formula-icon" />
       </div>
     </div>
 
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-12">
-          <div class="rumus-luas">
+          <div class="box-1">
             <h2>Mencari Luas</h2>
             <div class="rumus">
-              <p>Luas = S x S</p>
-              <p>ket :</p>
-              <p>S = Sisi</p>
+              <p>Luas = 1/2 * alas * tinggi</p>
             </div>
             <div class="container input-formula">
               <form>
                 <div
                   class="row d-flex align-items-center justify-content-center"
                 >
-                  <div class="col-5 input-angka">
-                    <p>Masukan Sisi</p>
-                    <input type="text" id="panjang" />
+                  <div
+                    class="col-lg-5 col-12 input-angka d-flex align-items-center justify-content-center flex-column mb-2 mb-lg-0"
+                  >
+                    <p>Masukan Nilai Alas</p>
+                    <input type="text" id="alasLuas" />
+                  </div>
+                  <div
+                    class="col-lg-5 col-12 input-angka d-flex align-items-center justify-content-center flex-column"
+                  >
+                    <p>Masukan Nilai Tinggi</p>
+                    <input type="text" id="tinggiLuas" />
                   </div>
                 </div>
               </form>
@@ -56,7 +61,7 @@
             <div class="box-hasil">
               <p>Hasil</p>
               <div class="hasil">
-                <p id="hasil"></p>
+                <p id="hasilLuas"></p>
               </div>
             </div>
             <div class="d-flex align-items-center justify-content-center mt-3">
@@ -71,26 +76,27 @@
           </div>
         </div>
         <div class="col-lg-6 col-12">
-          <div class="rumus-luas">
+          <div class="box-1">
             <h2>Mencari Keliling</h2>
             <div class="rumus">
-              <p>Luas = 2P x 2L</p>
-              <p>ket :</p>
-              <p>P = Panjang</p>
-              <p>L = Lebar</p>
+              <p>Keliling = 2a + b</p>
             </div>
             <div class="container input-formula">
               <form>
                 <div
                   class="row d-flex align-items-center justify-content-center"
                 >
-                  <div class="col-5 input-angka">
-                    <p>Masukan Panjang</p>
-                    <input type="text" id="panjang2" />
+                  <div
+                    class="col-lg-5 col-12 input-angka d-flex align-items-center justify-content-center flex-column"
+                  >
+                    <p>Masukan Nilai Sisi A</p>
+                    <input type="text" id="nilaiA" />
                   </div>
-                  <div class="col-5 input-angka">
-                    <p>Masukan Lebar</p>
-                    <input type="text" id="lebar2" />
+                  <div
+                    class="col-lg-5 col-12 input-angka d-flex align-items-center justify-content-center flex-column"
+                  >
+                    <p>Masukan Nilai Sisi B</p>
+                    <input type="text" id="nilaiB" />
                   </div>
                 </div>
               </form>
@@ -98,14 +104,14 @@
             <div class="box-hasil">
               <p>Hasil</p>
               <div class="hasil">
-                <p id="hasil2"></p>
+                <p id="hasilKel"></p>
               </div>
             </div>
             <div class="d-flex align-items-center justify-content-center mt-3">
               <button
                 type="button"
                 class="btn btn-hitung"
-                onclick="hitungKeliling()"
+                onclick="hitungKel()"
               >
                 Hitung
               </button>
@@ -117,6 +123,6 @@
     <!-- end content -->
 
     <!-- js -->
-    <script src="../JS/pages/persegi-panjang.js"></script>
+    <script src="../JS/pages/segitiga-sama-kaki.js"></script>
   </body>
 </html>
