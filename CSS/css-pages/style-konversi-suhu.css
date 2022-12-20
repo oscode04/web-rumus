@@ -1,0 +1,57 @@
+@import url("../formula-base-style.css");
+
+.rumus {
+  /* margin-top: 8px; */
+  width: 170px;
+  /* height: 80px; */
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  color: white;
+  margin: auto;
+  padding: 4px;
+}
+
+.rumus p {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.input-formula {
+  margin-top: 15px;
+}
+
+.input-angka {
+  color: #fff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  /* margin-bottom: 10px; */
+}
+
+.input-angka p {
+  margin-bottom: 1px;
+}
+
+.input-angka input,
+.input-angka input:focus {
+  max-width: 200px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+}
+
+.pilih-suhu1 {
+  /* margin-top: 8px; */
+  width: 170px;
+  /* height: 80px; */
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  color: white;
+  margin: auto;
+  padding: 4px;
+}
