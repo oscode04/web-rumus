@@ -1,5 +1,7 @@
 @import url("../formula-base-style.css");
 
+@import url("../css-pages/style-nav-mobile.css");
+
 .rumus {
   /* margin-top: 8px; */
   width: 170px;

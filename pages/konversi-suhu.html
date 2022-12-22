@@ -28,166 +28,115 @@
     </div>
 
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-12">
-          <div class="box-1">
-            <h2>Celcius - Fahrenheit</h2>
-            <div class="rumus">
-              <p>Nanti</p>
-            </div>
-            <div class="container input-formula">
-              <form>
-                <div
-                  class="row d-flex align-items-center justify-content-center"
-                >
-                  <div class="pilih-suhu1">
-                    <p>Dari</p>
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="box-1">
+          <!-- <h2>Celcius - Fahrenheit</h2> -->
+          <!-- <div class="rumus">
+            <p>Nanti</p>
+          </div> -->
+          <div class="container input-formula">
+            <form>
+              <div class="row justify-content-center">
+                <div class="from col-6 col-lg-6 me-3">
+                  <h5>Dari Suhu</h5>
+                  <div class="form-check">
                     <input
-                      class="form-check-input me-1"
+                      class="form-check-input"
                       type="radio"
                       name="suhu1"
                       id="celcius1"
-                      value="celcius"
+                      checked
                     />
-                    <label
-                      class="form-check-label me-4"
-                      for="flexRadioDefault1"
-                    >
+                    <label class="form-check-label" for="celcius">
                       Celcius
                     </label>
                   </div>
-                  <input
-                    class="form-check-input me-1"
-                    type="radio"
-                    name="suhu1"
-                    id="fahrenheit1"
-                    value="fahrenheit"
-                  />
-                  <label class="form-check-label" for="flexRadioDefault2">
-                    Fahrenheit
-                  </label>
-
-                  <div class="pilih-suhu2">
-                    <input class="form-check-input me-1" type="radio"
-                    name="suhu2" id="flexRadioDefault1" value="celcius />
-                    <label
-                      class="form-check-label me-4"
-                      for="flexRadioDefault1"
-                    >
-                      Celcius
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="suhu1"
+                      id="kelvin1"
+                    />
+                    <label class="form-check-label" for="kelvin">
+                      Kelvin
                     </label>
-
-                    <input class="form-check-input me-1" type="radio"
-                    name="suhu2" id="flexRadioDefault2" value="fahrenheit />
-                    <label class="form-check-label" for="flexRadioDefault2">
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="suhu1"
+                      id="fahrenheit1"
+                    />
+                    <label class="form-check-label" for="fahrenheit1">
                       Fahrenheit
                     </label>
                   </div>
                 </div>
-              </form>
-            </div>
-            <div class="box-hasil">
-              <p>Hasil</p>
-              <div class="hasil">
-                <p id="hasilC"></p>
-              </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-center mt-3">
-              <button
-                type="button"
-                class="btn btn-hitung"
-                onclick="hitungSuhu()"
-              >
-                Hitung
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="col-lg-6 col-12">
-          <div class="box-1">
-            <h2>Mencari Sisi B</h2>
-            <div class="rumus">
-              <p>B<sup>2</sup> = C<sup>2</sup> - A<sup>2</sup></p>
-            </div>
-            <div class="container input-formula">
-              <form>
-                <div
-                  class="row d-flex align-items-center justify-content-center"
-                >
-                  <div class="col-lg-5 col-12 input-angka">
-                    <p>Masukan Nilai A</p>
-                    <input type="text" id="nilai-x" />
+                <div class="from col-6 col-lg-6 ms-3">
+                  <h5>Ke Suhu</h5>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="suhu2"
+                      id="celcius2"
+                      checked
+                    />
+                    <label class="form-check-label" for="celcius">
+                      Celcius
+                    </label>
                   </div>
-                  <div class="col-lg-5 col-12 input-angka">
-                    <p>Masukan Nilai C</p>
-                    <input type="text" id="nilai-y" />
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="suhu2"
+                      id="kelvin2"
+                    />
+                    <label class="form-check-label" for="kelvin">
+                      Kelvin
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="suhu2"
+                      id="fahrenheit2"
+                    />
+                    <label class="form-check-label" for="fahrenheit2">
+                      Fahrenheit
+                    </label>
                   </div>
                 </div>
-              </form>
-            </div>
-            <div class="box-hasil">
-              <p>Hasil</p>
-              <div class="hasil">
-                <p id="hasilB"></p>
+                <div class="col-12 input-angka mt-2">
+                  <p>Masukan Nilai</p>
+                  <input type="text" id="nilaiSuhu" />
+                </div>
               </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-center mt-3">
-              <button
-                type="button"
-                class="btn btn-hitung"
-                onclick="hitungSisiB()"
-              >
-                Hitung
-              </button>
+              <div class="row justify-content-center"></div>
+            </form>
+          </div>
+          <div class="box-hasil">
+            <p>Hasil</p>
+            <div class="hasil">
+              <p id="hasilSuhu"></p>
             </div>
           </div>
-        </div> -->
+          <div class="d-flex align-items-center justify-content-center mt-3">
+            <button type="button" class="btn btn-hitung" onclick="hitungSuhu()">
+              Hitung
+            </button>
+          </div>
+        </div>
       </div>
-      <!-- <div class="row d-flex align-items-center justify-content-center">
-        <div class="col-lg-6 col-12">
-          <div class="box-1">
-            <h2>Mencari Sisi A</h2>
-            <div class="rumus">
-              <p>A<sup>2</sup> = C<sup>2</sup> - B<sup>2</sup></p>
-            </div>
-            <div class="container input-formula">
-              <form>
-                <div
-                  class="row d-flex align-items-center justify-content-center"
-                >
-                  <div class="col-lg-5 col-12 input-angka">
-                    <p>Masukan Nilai B</p>
-                    <input type="text" id="nilai-m" />
-                  </div>
-                  <div class="col-lg-5 col-12 input-angka">
-                    <p>Masukan Nilai C</p>
-                    <input type="text" id="nilai-n" />
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="box-hasil">
-              <p>Hasil</p>
-              <div class="hasil">
-                <p id="hasilA"></p>
-              </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-center mt-3">
-              <button
-                type="button"
-                class="btn btn-hitung"
-                onclick="hitungSisiA()"
-              >
-                Hitung
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
     <!-- end content -->
-
+    <navbar-element></navbar-element>
     <!-- js -->
     <script src="../JS/pages/konversi-suhu.js"></script>
+    <script src="../JS/pages/mobile-nav.js"></script>
   </body>
 </html>
